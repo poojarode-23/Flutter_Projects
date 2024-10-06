@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+import 'package:flutter/widgets.dart';
 void main(){
 
   runApp(const MainApp());
@@ -42,7 +43,7 @@ class MainApp extends StatelessWidget{
                   ),
                   SingleChildScrollView(scrollDirection: Axis.horizontal,
                   child: Row(
-                    children: [
+                    children: Container.[
                       Container(
                         padding: const EdgeInsets.all(5),
                         height: 300,

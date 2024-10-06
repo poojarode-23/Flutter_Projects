@@ -101,7 +101,7 @@ class _QuizAppState extends State{
           ),
       ),
       centerTitle: true,
-      backgroundColor: Colors.lightBlueAccent,
+      backgroundColor: Colors.blue,
     ),
     body: Column(
       children:[
@@ -113,7 +113,7 @@ class _QuizAppState extends State{
         Row(
           children: [
             const SizedBox(
-              width:150,
+              width:100,
             ),
             Text(
               "Question :${currentQuestionIndex+1}/${allQuestion.length}",
@@ -308,16 +308,15 @@ class _QuizAppState extends State{
             ),
           ),
           centerTitle: true,
-          backgroundColor: Colors.lightBlueAccent,
+          backgroundColor: Colors.blue,
         ),
         body:Center(
           child:Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
       
-              Image.network(
-             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDNQP485_aTvAkU8NdD37XUfmctAZwFImvQQ&s",
-                height: 250,
+              Image.asset("assets/trophy image.png",
+              height: 350,
               ),
               const SizedBox(
                 height:30
