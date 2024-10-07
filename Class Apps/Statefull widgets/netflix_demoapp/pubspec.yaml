@@ -17,3 +17,10 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+      - assets/war.jpeg
+      - assets/tanaji.jpeg
+      - assets/seizedimage.jpeg
+      - assets/marjawan.jpeg
+      - assets/badshaha.jpeg

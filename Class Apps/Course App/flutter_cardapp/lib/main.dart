@@ -100,6 +100,7 @@ class _MainAppState extends State{
                   children: [
                     Icon(Icons.remove),
                     SizedBox(
+                    
                       height: 50,
                       width: 50,
                       

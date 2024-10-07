@@ -17,3 +17,13 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+      - assets/boom boom.jpg
+      - assets/hitman-king.jpeg
+      - assets/msd.jpg
+      - assets/rohit sharma.jpeg
+      - assets/sachin tendulkar.jpeg
+      - assets/shikar dhavan.jpeg
+      - assets/vkohli.jpeg
+      - assets/yuvraj singh.jpeg

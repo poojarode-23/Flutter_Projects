@@ -29,12 +29,12 @@ class MainApp extends StatelessWidget{
         ),
         body: ListView.builder(
           itemCount: 10,
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           itemBuilder: (BuildContext context,int index){
-              return const Column(
+              return  Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
+                   const Text(
                     "Action Movies",
                     style: TextStyle(
                         fontSize: 30,
@@ -43,48 +43,37 @@ class MainApp extends StatelessWidget{
                   ),
                   SingleChildScrollView(scrollDirection: Axis.horizontal,
                   child: Row(
-                    children: Container.[
-                      Container(
+                    children: [
+                     
+                       Container(
                         padding: const EdgeInsets.all(5),
                         height: 300,
                         width: 200,
-                        child: Image.network(""),
+                        child: Image.asset("assets/tanaji.jpeg"),
+                      ),
+                       Container(
+                        padding:const EdgeInsets.all(5),
+                        height: 300,
+                        width: 200,
+                        child: Image.asset("assets/war.jpeg"),
                       ),
                        Container(
                         padding: const EdgeInsets.all(5),
                         height: 300,
                         width: 200,
-                        child: Image.network(""),
+                        child: Image.asset("assets/seizedimage.jpeg"),
                       ),
                        Container(
                         padding: const EdgeInsets.all(5),
                         height: 300,
                         width: 200,
-                        child: Image.network(""),
+                        child: Image.asset("assets/marjawan.jpeg"),
                       ),
                        Container(
                         padding: const EdgeInsets.all(5),
                         height: 300,
                         width: 200,
-                        child: Image.network(""),
-                      ),
-                       Container(
-                        padding: const EdgeInsets.all(5),
-                        height: 300,
-                        width: 200,
-                        child: Image.network(""),
-                      ),
-                       Container(
-                        padding: const EdgeInsets.all(5),
-                        height: 300,
-                        width: 200,
-                        child: Image.network(""),
-                      ),
-                       Container(
-                        padding: const EdgeInsets.all(5),
-                        height: 300,
-                        width: 200,
-                        child: Image.network(""),
+                        child: Image.asset("assets/badshaha.jpeg"),
                       ),
                     ],
                   ),

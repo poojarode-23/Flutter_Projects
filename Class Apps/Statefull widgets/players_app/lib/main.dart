@@ -16,11 +16,15 @@ class _PlayerAppState extends State<PlayerApp>{
   int counter = 0;
 
   List<String> playerList = <String>[
-    "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1200,q_50/lsci/db/PICTURES/CMS/348100/348106.jpg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH4ogMhS7cIhyqU3rVUI9MriaP7RB0buHXmA&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoFUx-9c2FS0Flj2pcoApdrBnNW17cXl51Fw&s",
-    "https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w960/f_auto/primary/mpkqvclcpg3texaauqsd",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScNEwDRY7TKxpUq-EumY2a9sTV1ZvBQ_VdYQ&s",
+       
+       "assets/hitman-king.jpeg",
+       "assets/rohit sharma.jpeg",
+       "assets/vkohli.jpeg",
+       "assets/boom boom.jpg",
+       "assets/msd.jpg",
+       "assets/sachin tendulkar.jpeg",
+       "assets/shikar dhavan.jpeg",
+       "assets/yuvraj singh.jpeg",
 
   ];
 
@@ -41,7 +45,7 @@ class _PlayerAppState extends State<PlayerApp>{
             mainAxisAlignment: MainAxisAlignment.center,
             children:<Widget> [
 
-              Image.network(
+              Image.asset(
                 playerList[counter],
                 height: 300,
               ),
