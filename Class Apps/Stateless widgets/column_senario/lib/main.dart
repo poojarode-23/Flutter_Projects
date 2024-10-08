@@ -2,87 +2,44 @@ import 'package:flutter/material.dart';
 
 void main(){
 
-  runApp(const ColumnApp());
+  runApp(const MainApp());
 }
 
-class ColumnApp extends StatelessWidget{
+class MainApp extends StatelessWidget{
 
-  const ColumnApp({super.key});
-
+  const MainApp({super.key});
   @override
-
   Widget build(BuildContext context){
 
+    print("Device width:${MediaQuery.of(context).size.width}");
+    print ("Device height :${MediaQuery.of(context).size.height}");
     return MaterialApp(
-
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("Column senario"),
+          title: const Text("Column Demo",
+            style: TextStyle(
+              fontSize: 30,
+              fontWeight: FontWeight.w600
+            ),
+          ),
           centerTitle: true,
           backgroundColor: Colors.blue,
-
         ),
-        
-        body:SingleChildScrollView(
-          scrollDirection: Axis.vertical,
-
+        body: Container(
+          width: MediaQuery.of(context).size.width,
+          color: Colors.red,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-          
+            crossAxisAlignment: CrossAxisAlignment.end,
             children: [
-              Container(
-                height: 100,
-                width: 100,
-                color: Colors.red,
-              ),
-              Container(
-                height: 100,
-                width: 100,
-                color: Colors.yellowAccent,
-              ),
-              Container(
-                height: 100,
-                width: 100,
-                color: Colors.black,
-              ),
-
-              Container(
-                height: 100,
-                width: 100,
-                color: Colors.pink,
-              ),
-
-              Container(
-                height: 100,
-                width: 100,
-                color: Colors.amberAccent,
-              ),
-
-              Container(
-                height: 100,
-                width: 100,
-                color: Colors.purple,
-              ),
-              Container(
-                height: 100,
-                width: 100,
-                color: Colors.amberAccent,
-              ),
-
-              Container(
-                height: 100,
-                width: 100,
-                color: Colors.blue,
-              ),
-              Container(
-                height: 100,
-                width: 100,
-                color: Colors.amberAccent,
-              ),
-
-          ],),
-          ),
+                Container(
+                  height: 200,
+                  width: 200,
+                  color: Colors.amber,
+                ),
+              ],
+            ),
+        ),
       ),
     );
   }
