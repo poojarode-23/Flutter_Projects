@@ -28,7 +28,7 @@ class MainApp extends StatelessWidget{
         ),
         body: ListView(
           children: [
-              Image.network("https://th.bing.com/th/id/OIP.HxV79tFMPfBAIo0BBF-sOgHaEy?w=231&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"),
+              Image.asset("assets/hitman-king.jpeg"),
               const Icon(
                 Icons.favorite,
                 color: Colors.red,
@@ -40,7 +40,7 @@ class MainApp extends StatelessWidget{
                   fontWeight: FontWeight.w500,
                 ),
                 ),
-                Image.network("://th.bing.com/th/id/OIP.HxVhttps79tFMPfBAIo0BBF-sOgHaEy?w=231&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"),
+                Image.asset("assets/hitman-king.jpeg"),
                 GestureDetector(
                     onTap: (){
                       print("Button Pressed");

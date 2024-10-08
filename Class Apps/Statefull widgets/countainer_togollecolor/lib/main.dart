@@ -12,11 +12,11 @@ class ContainercolorApp extends StatefulWidget{
   State<ContainercolorApp> createState() => _ContainercolorAppState();
 
 }
-
+bool colorchange = true;
 class _ContainercolorAppState extends State<ContainercolorApp>{
 
-  bool colorchange = true;
-
+  
+  @override
   Widget build(BuildContext context){
 
     return MaterialApp(
@@ -44,7 +44,7 @@ class _ContainercolorAppState extends State<ContainercolorApp>{
 
             }
             else{
-              colorchange == true;
+              colorchange == false;
             }
             setState(() {});
           },

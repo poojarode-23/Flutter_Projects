@@ -31,7 +31,8 @@ class _CounterAppState extends State<CounterApp>{
   int count = 0;
   @override
   Widget build(BuildContext context){
-    return Scaffold(
+    return MaterialApp(
+      home: Scaffold(
 
       appBar: AppBar(
           title: const Text("Counter App"),
@@ -50,6 +51,7 @@ class _CounterAppState extends State<CounterApp>{
         },
         child: const Icon(Icons.add),
       ),
+    ),
     );
 
   }
